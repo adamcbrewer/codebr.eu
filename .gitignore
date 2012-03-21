@@ -1,0 +1,11 @@
+# IMPORTANT
+#######################
+wp-config.php
+
+
+# FILES
+#######################
+*.DS_Store
+*.sql
+*.log
+_sql/
