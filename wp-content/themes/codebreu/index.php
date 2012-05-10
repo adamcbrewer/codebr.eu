@@ -16,6 +16,7 @@
 get_header(); ?>
 
 			<?php
+<<<<<<< HEAD
 				/* Run the loop to output the posts.
 				 * If you want to overload this in a child theme then include a file
 				 * called loop-index.php and that will be used instead.
@@ -52,6 +53,14 @@ get_header(); ?>
 		?>
 
 	<?php endif; ?>
+=======
+			/* Run the loop to output the posts.
+			 * If you want to overload this in a child theme then include a file
+			 * called loop-index.php and that will be used instead.
+			 */
+			 get_template_part( 'loop', 'index' );
+			?>
+>>>>>>> 89d93479215046255d0738824a1ef51cc0947a54
 
 <?php get_sidebar(); ?>
 <?php get_footer(); ?>

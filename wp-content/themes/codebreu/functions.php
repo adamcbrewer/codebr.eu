@@ -543,6 +543,7 @@ if ( function_exists( 'add_theme_support' ) ) {
 	add_theme_support( 'post-thumbnails' );
 }
 
+<<<<<<< HEAD
 
 ################################################
 #
@@ -633,4 +634,6 @@ function excerpt_read_more_link($output) {
 }
 add_filter('the_excerpt', 'excerpt_read_more_link');
 
+=======
+>>>>>>> 89d93479215046255d0738824a1ef51cc0947a54
 ?>

@@ -46,5 +46,9 @@ get_header(); ?>
 	 */
 	 get_template_part( 'loop', 'archive' );
 ?>
+<<<<<<< HEAD
 <?php // get_sidebar(); ?>
+=======
+<?php get_sidebar(); ?>
+>>>>>>> 89d93479215046255d0738824a1ef51cc0947a54
 <?php get_footer(); ?>
