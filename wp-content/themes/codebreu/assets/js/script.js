@@ -1,7 +1,0 @@
-/* Author:
-
-*/
-
-$(document).ready(function () {
-	
-});
