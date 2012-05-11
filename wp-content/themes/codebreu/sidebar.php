@@ -8,15 +8,7 @@
  */
 ?>
 
-<<<<<<< HEAD
-<<<<<<< HEAD
 			<!-- <ul class="xoxo"> -->
-=======
-			<ul class="xoxo">
->>>>>>> 89d93479215046255d0738824a1ef51cc0947a54
-=======
-			<ul class="xoxo">
->>>>>>> 89d93479215046255d0738824a1ef51cc0947a54
 
 <?php
 	/* When we call the dynamic_sidebar() function, it'll spit out
@@ -47,15 +39,7 @@
 			</li>
 
 		<?php endif; // end primary widget area ?>
-<<<<<<< HEAD
-<<<<<<< HEAD
 		</ul>
-=======
-			</ul>
->>>>>>> 89d93479215046255d0738824a1ef51cc0947a54
-=======
-			</ul>
->>>>>>> 89d93479215046255d0738824a1ef51cc0947a54
 
 <?php
 	// A second sidebar for widgets, just because.
