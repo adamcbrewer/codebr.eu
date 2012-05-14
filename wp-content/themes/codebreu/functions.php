@@ -619,6 +619,26 @@ function custom_pagination($pages = '', $range = 2) {
 
 
 
+add_action( 'init', 'create_post_type' );
+function create_post_type() {
+	register_post_type( 'link_posts',
+		array(
+			'labels' => array(
+				'name' => __( 'Links' ),
+				'singular_name' => __( 'link' )
+			),
+			'public' => true,
+			'has_archive' => true,			
+			'public' => true,
+			'show_ui' => true,
+			'capability_type' => 'post',
+			'hierarchical' => false,
+			'rewrite' => true,
+			'supports' => array('title','author','thumbnail','excerpt','tags','comments'),
+			
+		)
+	);
+}
 
 
 
