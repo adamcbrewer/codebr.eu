@@ -618,6 +618,10 @@ function custom_pagination($pages = '', $range = 2) {
 
 
 
+
+
+
+
 /**
  * Custom excerpt-links
  *
