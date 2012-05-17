@@ -641,6 +641,15 @@ function create_post_type() {
 }
 
 
+add_filter( 'pre_get_posts', 'my_get_posts' );
+
+function my_get_posts( $query ) {
+	if ( is_home() )
+		$query->set( 'post_type', array( 'post', 'link_posts' ) );
+
+	return $query;
+}
+
 
 /**
  * Custom excerpt-links

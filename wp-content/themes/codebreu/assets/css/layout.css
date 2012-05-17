@@ -1,7 +1,7 @@
 /*needs tweaked for max*/
 
 /* full size */
-body { background:green}
+body {/* background:green*/}
 #wrapper { max-width: 1149px;}
 #header { float:left; width:13.402959094865%;}
 #content { float:right; width:82.680591818973%;}
@@ -10,7 +10,7 @@ body { background:green}
 and (min-width : 768px)
 and (max-width : 1024px) {
 	/* 950*/
-	body {background:blue}
+	body {/*background:blue*/}
 	#wrapper { max-width: 950px;}
 	#header { float:left; width:16.210526315789%;} /*154*/
 	#content { float:right; width:79.052631578947;} /*751*/
