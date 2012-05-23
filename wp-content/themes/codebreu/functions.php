@@ -640,6 +640,40 @@ function create_post_type() {
 	);
 }
 
+/**
+ * Custom Post Types
+ *
+ * Add additional Post & Page types
+ * 
+ */
+add_action( 'init', 'my_custom_post_types' );
+function my_custom_post_types() {
+	
+	// reproduce this for every new post type needed
+	register_post_type( 'codeboners',
+		array(
+			'labels' => array(
+				'name' => __( 'Codeboners' ),
+				'singular_name' => __( 'Codeboner' ),
+	            'add_new' => 'Add New Codeboner',
+	            'edit_item' => 'Edit Codeboner',
+	            'new_item' => 'New Codeboner',
+	            'view_item' => 'View Codeboners',
+	            'search_items' => 'Search Codeboners',
+	            'not_found' => 'No Codeboners found',
+	            'not_found_in_trash' => 'No Codeboners found in Trash'
+			),
+			'public' => true,
+			'has_archive' => true,
+			'rewrite' => array('slug' => 'codeboner'),
+			'menu_position' => 5,
+			'supports' => array( 'title','editor', 'thumbnail', 'excerpt', 'custom-fields' )
+			// 'taxonomies' => array('skill') // hard-set the allowed taxonomies, built in (tags, categories) or custom ones (skills)
+		)
+	);
+}
+
+
 
 add_filter( 'pre_get_posts', 'my_get_posts' );
 
