@@ -1,18 +1,16 @@
 <?php
-/**
- * Front to the WordPress application. This file doesn't do anything, but loads
- * wp-blog-header.php which does and tells WordPress to load the theme.
- *
- * @package WordPress
- */
 
-/**
- * Tells WordPress to load the WordPress theme and output it.
- *
- * @var bool
- */
-define('WP_USE_THEMES', true);
+define('ROOT_DIR', realpath(dirname(__FILE__)) .'/');
+define('CONTENT_DIR', ROOT_DIR .'content/');
+define('CONTENT_EXT', '.md');
+define('LIB_DIR', ROOT_DIR .'lib/');
+define('PLUGINS_DIR', ROOT_DIR .'plugins/');
+define('THEMES_DIR', ROOT_DIR .'themes/');
+define('CACHE_DIR', LIB_DIR .'cache/');
 
-/** Loads the WordPress Environment and Template */
-require('./wp-blog-header.php');
+require(ROOT_DIR .'vendor/autoload.php');
+require(LIB_DIR .'markdown.php');
+require(LIB_DIR .'pico.php');
+$pico = new Pico();
+
 ?>

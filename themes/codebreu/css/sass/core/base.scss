@@ -1,0 +1,71 @@
+/* ====================================================
+    BASE STYLES
+
+    Base rules are the defaults. They are almost exclusively
+    single element selectors but it could include attribute selectors,
+    pseudo-class selectors, child selectors or sibling selectors.
+    Essentially, a base style says that wherever this element is on the page,
+    it should look like...
+==================================================== */
+
+* {
+    /* remove this if supporting ie7 */
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+
+    /* for ie6 and 7 */
+    *behavior: url(/assets/css/vendor/boxsizing.htc);
+
+    /* some defaults */
+    // background-repeat: no-repeat;
+    // vertical-align: middle;
+}
+
+::-moz-selection{ background:#333; color:#F8F8F8; text-shadow:none; }
+::selection { background:#333; color:#F8F8F8; text-shadow:none; }
+
+html, body { -web-font-smoothing: antialiased; }
+html {
+    font-size: 62.5%;
+}
+body {
+    width: 100%;
+    height: 100%;
+    font-family: @ff-sans;
+    background-color: @c-bg;
+    color: @c-copy;
+    font-size: 1.4em; // 14 px
+    line-height: 1.5;
+}
+
+::-webkit-input-placeholder {}
+:-moz-placeholder {}
+
+[type=search] {
+    /* resets webkit styling on search inputs */
+    -webkit-appearance: none;
+}
+/* Style the webkit validation message for forms */
+::-webkit-validation-bubble-message {
+padding: 40px;
+}
+
+a {}
+a:link {}
+a:visited {}
+a:hover {}
+a:active {}
+a:focus {}
+
+input:required {}
+input:optional {}
+input:valid {}
+input:invalid {}
+input:default {}
+input:focus {}
+
+input:enabled {}
+input:disabled {}
+input:checked {}
+input:indeterminate {} /* un-selected radio buttons :) */

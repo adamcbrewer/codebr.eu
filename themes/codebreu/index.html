@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+	<meta charset="utf-8" />
+
+	<title>{% if meta.title %}{{ meta.title }} | {% endif %}{{ site_title }}</title>
+
+	<meta name="description" content="{% if meta.description %}{{ meta.description }}{% else %}{{ config.description }}{% endif %}">
+	<meta name="keywords" content="{{ config.keywords }}">
+
+	<link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Ubuntu:400,300' type='text/css' >
+	<link rel="stylesheet" href="{{ theme_url }}/css/style.css" type="text/css" />
+
+	 <script data-script="google-analytics" type="text/javascript">
+		// var _gaq = _gaq || [];
+		// _gaq.push(['_setAccount', 'UA-31721666-1']);
+		// _gaq.push(['_trackPageview']);
+		// (function() {
+		// 	var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		// 	ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		// 	var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		// })();
+	</script>
+
+</head>
+<body>
+
+	<div class="wrapper">
+		<header class="header" role="banner">
+	        <a id="logo" href="{{ base_url }}" title="{{ site_title }}">
+	        	<img src="{{ theme_url }}/img/codebreu-logo.png" alt="{{ site_title }}" role="logo" />
+	        </a>
+	    </header>
+
+	    <section class="content">
+
+			{% if is_front_page %} <!-- Front page lists all blog posts -->
+
+				{{ content }}
+
+				<div id="posts">
+					{% for page in pages %}
+						{% if page.date %} <!-- Note we check for Date field (posts) here -->
+							<div class="post">
+								<h3><a href="{{ page.url }}">{{ page.title }}</a></h3>
+								<p class="meta">{{ page.date_formatted }}</p>
+							</div>
+						{% endif %}
+					{% endfor %}
+				</div>
+
+			{% else %} <!-- Single page shows individual blog post -->
+
+				{{ content }}
+
+			{% endif %}
+
+		</section>
+
+		<div class="push"></div>
+	</div>
+
+	<footer class="footer" role="contentinfo">
+		<article class="inner">
+			&copy;<a target="_blank" title="brewerlogic.com" href="http://adamcbrewer.com">Adam Brewer</a> &amp; <a target="_blank" title="stuuuuugoooooooooo" href="http://stugoo.co.uk">Stu Grant</a> {{ config.copywrite }}. <a title="@codebreu" target="_blank" href="http://twitter.com/codebreu">Twitter</a>
+		</article>
+	</footer>
+
+</body>
+</html>
