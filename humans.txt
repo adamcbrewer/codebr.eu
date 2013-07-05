@@ -13,6 +13,7 @@
 _______________________________________________________________________________
 
 PEOPLE
+
 Adam Brewer - developer
 	@adamcbrewer
 	brewerlogic.com
