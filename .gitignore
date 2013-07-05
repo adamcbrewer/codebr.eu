@@ -1,7 +1,7 @@
 # Our stuff
 themes/codebreu/css/*.css
 robots.txt
-git*.php
+_*
 
 # Pico CMS stuff
 composer.lock
