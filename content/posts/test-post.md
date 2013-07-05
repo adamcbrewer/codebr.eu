@@ -20,7 +20,6 @@ I said the keys are in here. Now remember, according to my theory you interfered
 	    height: auto !important;
 	    height: 100%;
 	    margin: 0 auto -200px; /* the bottom margin is the negative value of the footer's height */
-
 	    max-width: 1000px;
 	    padding: 2% 3em;
 	}

@@ -1,7 +1,7 @@
 /*
 Title: Style Guide
 Description: Codebreu Style Guide
-Date: 2013-07-04
+Date: 2013-07-05
 Author: Stu Grant
 */
 
@@ -61,7 +61,6 @@ Lorem ipsum `code text`, consectetur adipisicing elit. Pariatur, reiciendis, fug
 	    height: auto !important;
 	    height: 100%;
 	    margin: 0 auto -200px; /* the bottom margin is the negative value of the footer's height */
-
 	    max-width: 1000px;
 	    padding: 2% 3em;
 	}
