@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8" />
 
-	<title>{% if meta.title %}{{ meta.title }} | {% endif %}{{ site_title }}</title>
+	<title>{% if meta.title %}{{ meta.title }} : {% endif %}{{ site_title }}</title>
 
 	<meta name="description" content="{% if meta.description %}{{ meta.description }}{% else %}{{ config.description }}{% endif %}">
 	<meta name="keywords" content="{{ config.keywords }}">
@@ -13,7 +13,7 @@
 
 	 <script data-script="google-analytics" type="text/javascript">
 		// var _gaq = _gaq || [];
-		// _gaq.push(['_setAccount', 'UA-31721666-1']);
+		// _gaq.push(['_setAccount', '{{ config.analytics }}']);
 		// _gaq.push(['_trackPageview']);
 		// (function() {
 		// 	var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
@@ -36,17 +36,20 @@
 
 			{% if is_front_page %} <!-- Front page lists all blog posts -->
 
-				{{ content }}
-
-				<div id="posts">
-					{% for page in pages %}
-						{% if page.date %} <!-- Note we check for Date field (posts) here -->
-							<div class="post">
-								<h3><a href="{{ page.url }}">{{ page.title }}</a></h3>
-								<p class="meta">{{ page.date_formatted }}</p>
-							</div>
-						{% endif %}
-					{% endfor %}
+				<div class="posts">
+					<ol class="posts-list">
+						{% for page in pages %}
+							{% if page.date %} <!-- Note we check for Date field (posts) here -->
+								<article class="post">
+									<h2 class="post-title"><a href="{{ page.url }}">{{ page.title }}</a></h2>
+									<aside class="post-meta">
+										<span class="post-author">{{ page.author }}</span>
+										<time class="post-date" datetime="{{ page.date }}" title="{{ page.date }}">{{ page.date_formatted }}</time>
+									</aside>
+								</article>
+							{% endif %}
+						{% endfor %}
+					</ol>
 				</div>
 
 			{% else %} <!-- Single page shows individual blog post -->

@@ -68,3 +68,39 @@ input:enabled {}
 input:disabled {}
 input:checked {}
 input:indeterminate {} /* un-selected radio buttons :) */
+
+p {
+    // font-family: $ff-serif;
+}
+
+p code {
+    @include border-radius(4px);
+    padding: 0.1em 0.4em;
+    background-color: rgba($c-primary, 0.8);
+}
+
+pre {
+    position: relative;
+    border: 1px solid $c-copy;
+    padding: 2em;
+    margin: 2em auto;
+    font-family: $ff-mono;
+    background-color: $c-copy;
+    color: $c-primary;
+    @include border-radius(4px);
+
+    &:after {
+        content: attr(data-type);
+        position: absolute;
+        top: -4px;
+        right: 10px;
+        background: $c-secondary;
+        color: $c-bg;
+        padding: 2em 0.2em 1em;
+        font-weight: bold;
+        text-transform: uppercase;
+        text-align: center;
+        text-shadow: 1px 1px 0 rgba($c-copy, 0.6);
+        min-width: 40px;
+    }
+}

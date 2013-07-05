@@ -13,7 +13,14 @@
 _______________________________________________________________________________
 
 PEOPLE
-<name> - <title> - <twitter>
+Adam Brewer - developer
+	@adamcbrewer
+	brewerlogic.com
+	adamcbrewer.com
+
+Stuart Grant - developer/designer
+	@stugoo
+	stugoo.co.uk
 
 _______________________________________________________________________________
 
@@ -37,3 +44,5 @@ _______________________________________________________________________________
 
 THANKS TO
 
+Coffee
+Bacon
