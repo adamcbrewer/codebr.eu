@@ -1,11 +1,5 @@
 /* ====================================================
     BASE STYLES
-
-    Base rules are the defaults. They are almost exclusively
-    single element selectors but it could include attribute selectors,
-    pseudo-class selectors, child selectors or sibling selectors.
-    Essentially, a base style says that wherever this element is on the page,
-    it should look like...
 ==================================================== */
 
 * {
@@ -15,8 +9,8 @@
     box-sizing: border-box;
 }
 
-::-moz-selection{ background:#333; color:#F8F8F8; text-shadow:none; }
-::selection { background:#333; color:#F8F8F8; text-shadow:none; }
+::-moz-selection{ background: $c-primary; color: #fff; text-shadow:none; }
+::selection { background: $c-primary; color: #fff; text-shadow:none; }
 
 html, body { -web-font-smoothing: antialiased; }
 html { font-size: 62.5%; }
@@ -56,10 +50,10 @@ body {
     padding: 40px;
 }
 
-a {}
+a { color: $c-secondary; }
 a:link {}
 a:visited {}
-a:hover {}
+a:hover { color: $c-primary }
 a:active {}
 a:focus {}
 
