@@ -1,9 +1,12 @@
 /* ====================================================
     LESS VARIABLES
 ==================================================== */
-@c-bg: #FFF;
-@c-copy: #333;
+$c-bg: #f4d2a7;
+$c-copy: #462b2a;
 
-@ff-sans: "Helvetica Neue", Helvetica, Arial, sans-serif;
-@ff-serif: Baskerville, "utopia-std", "Hoefler Text", Georgia, Times, serif;
-@ff-mono: Monaco, Menlo, Consolas, "Courier New", monospace;
+$c-selection-color: #f4d2a7;
+$c-selection-bg: #462b2a;
+
+$ff-sans: "Helvetica Neue", Helvetica, Arial, sans-serif;
+$ff-serif: Baskerville, "utopia-std", "Hoefler Text", Georgia, Times, serif;
+$ff-mono: Monaco, Menlo, Consolas, "Courier New", monospace;
