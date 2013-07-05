@@ -21,13 +21,13 @@
     min-height: 100%;
     height: auto !important;
     height: 100%;
-    margin: 0 auto -200px; /* the bottom margin is the negative value of the footer's height */
+    margin: 0 auto (-$h-footer); /* the bottom margin is the negative value of the footer's height */
 
-    max-width: 1000px;
-    padding: 2% 3em;
+    max-width: $w-wrapper-max;
+    padding: 3em 4%;
 }
 .footer, .push {
-    height: 200px; /* .push must be the same height as .footer */
+    height: $h-footer; /* .push must be the same height as .footer */
 }
 
 .footer {
@@ -35,9 +35,9 @@
     color: #f4d2a7;
 }
 .footer .inner {
-    max-width: 1000px;
+    max-width: $w-wrapper-max;
     margin: auto;
-    padding: 2em 2%;
+    padding: 2em 4%;
 }
 .footer a {
     color: #f4d2a7;

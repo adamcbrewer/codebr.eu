@@ -2,14 +2,22 @@
     VARIABLES
 ==================================================== */
 
+// Colors
+// ===================
 $c-bg: #f4d2a7;
 $c-copy: #462b2a;
 $c-primary: #8dd6cf;
 $c-secondary: #ef4f45;
-
 $c-selection-color: #f4d2a7;
 $c-selection-bg: #462b2a;
 
+// Fonts
+// ===================
 $ff-sans: "Helvetica Neue", Helvetica, Arial, sans-serif;
-$ff-serif: Baskerville, "utopia-std", "Hoefler Text", Georgia, Times, serif;
+$ff-serif: "utopia-std", "Hoefler Text", Georgia, Times, serif;
 $ff-mono: Monaco, Menlo, Consolas, "Courier New", monospace;
+
+// Dimentions
+// ===================
+$w-wrapper-max: 60em;
+$h-footer: 10em;

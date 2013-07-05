@@ -42,10 +42,10 @@
 							{% if page.date %} <!-- Note we check for Date field (posts) here -->
 								<article class="post">
 									<h2 class="post-title"><a href="{{ page.url }}">{{ page.title }}</a></h2>
-									<aside class="post-meta">
+									<footer class="post-meta">
 										<span class="post-author">{{ page.author }}</span>
 										<time class="post-date" datetime="{{ page.date }}" title="{{ page.date }}">{{ page.date_formatted }}</time>
-									</aside>
+									</footer>
 								</article>
 							{% endif %}
 						{% endfor %}

@@ -8,3 +8,11 @@
 
     Never set breakpoints for devices, only when the design requires it.
 ========================================================================== */
+@media screen and (max-width: 40em) {
+	pre {
+		font-size: 0.8em;
+	}
+}
+@media screen and (max-width: 30em) {
+	.header { text-align: center; }
+}

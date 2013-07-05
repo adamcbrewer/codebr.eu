@@ -104,3 +104,11 @@ pre {
         min-width: 40px;
     }
 }
+
+blockquote {
+    border-left: 0.4em solid rgba($c-copy, 0.8);
+    padding-left: 2em;
+    margin: 2em 1.8em;
+    font-size: 1.2em;
+    font-family: $ff-serif;
+}
