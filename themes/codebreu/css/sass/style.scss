@@ -33,17 +33,21 @@
 .footer {
     background-color: #292929;
     color: #f4d2a7;
-}
-.footer .inner {
-    max-width: $w-wrapper-max;
-    margin: auto;
-    padding: 2em 4%;
-}
-.footer a {
-    color: #f4d2a7;
-    text-decoration: none;
-}
 
+    a {
+        color: #f4d2a7;
+        text-decoration: none;
+        &:hover {
+            // text-decoration: underline;
+            color: $c-primary;
+        }
+    }
+    .inner {
+        max-width: $w-wrapper-max;
+        margin: auto;
+        padding: 2em 4%;
+    }
+}
 .content {
     margin: 4em auto;
 }

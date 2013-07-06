@@ -57,10 +57,11 @@ Lorem ipsum `code text`, consectetur adipisicing elit. Pariatur, reiciendis, fug
 ### CSS
 <pre data-type="css">
 	.wrapper {
+		/* Ryan Fait sticky footer */
 	    min-height: 100%;
 	    height: auto !important;
 	    height: 100%;
-	    margin: 0 auto -200px; /* the bottom margin is the negative value of the footer's height */
+	    margin: 0 auto -200px;
 	    max-width: 1000px;
 	    padding: 2% 3em;
 	}
@@ -71,7 +72,7 @@ Lorem ipsum `code text`, consectetur adipisicing elit. Pariatur, reiciendis, fug
 <pre data-type="js">
 	var test = {},
 		foo = function (word) {
-			console.log(word || null);
+			console.log(word);
 		}
 	foo('yo!');
 </pre>

@@ -8,3 +8,7 @@
     They are also about describing how a module might look in different
     views like the home page or the inside page.
 ==================================================== */
+
+a {
+	@include transition(0.1s color ease 0s);
+}
