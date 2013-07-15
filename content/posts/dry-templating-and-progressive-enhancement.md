@@ -27,3 +27,7 @@ Surely developers sould be encouraged to build working sites first and layering 
 So, trying to recover and get back to the subject of this post, if we're trying to encourage progressive enhancement we need common ground amongst the tools and libraries we use. Better templating engines catering for both Javascript and our server language of choice. We need solutions for pairing content between delivery methods, not isolating content or being 'mobile-mostly'.
 
 I'm still searching for a solution, but I guess as a developer I'll never really be satisfied!
+
+## Have something to add?
+
+<div id="disqus_thread"></div>
