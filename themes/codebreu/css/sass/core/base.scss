@@ -111,4 +111,13 @@ blockquote {
     margin: 2em 1.8em;
     font-size: 1.2em;
     font-family: $ff-serif;
+
+    cite {
+        display: block;
+        text-align: left;
+
+        &:before {
+            content: "-- ";
+        }
+    }
 }
