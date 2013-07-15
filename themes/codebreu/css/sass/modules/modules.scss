@@ -35,3 +35,9 @@
 		color: $c-copy;
 	}
 }
+.prevnext {
+	overflow: auto;
+	[rel="next"] {
+		float: right;
+	}
+}

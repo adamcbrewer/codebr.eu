@@ -2,6 +2,7 @@
 <html lang="en" class="no-js">
 <head>
 	<meta charset="utf-8" />
+	<link rel="icon" type="image/png" href="{{ theme_url }}/img/favicon.png">
 
 	<title>{% if meta.title %}{{ meta.title }} : {% endif %}{{ site_title }}</title>
 
@@ -53,9 +54,9 @@
 
 			{% else %} <!-- Single page shows individual blog post -->
 
-				<nav>
-					{% if prev_page.date %}<a href="{{ prev_page.url }}">Back</a>{% endif %}
-					{% if next_page.date %}<a href="{{ next_page.url }}">Next</a>{% endif %}
+				<nav class="prevnext">
+					{% if prev_page.date %}<a rel="prev" href="{{ prev_page.url }}">Back</a>{% endif %}
+					{% if next_page.date %}<a rel="next" href="{{ next_page.url }}">Next</a>{% endif %}
 				</nav>
 
 				{{ content }}
