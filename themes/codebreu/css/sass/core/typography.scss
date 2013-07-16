@@ -1,0 +1,130 @@
+
+a { color: $c-secondary; }
+a:link {}
+a:visited {}
+a:hover { color: $c-primary }
+a:active {}
+a:focus {}
+
+input:required {}
+input:optional {}
+input:valid {}
+input:invalid {}
+input:default {}
+input:focus {}
+
+input:enabled {}
+input:disabled {}
+input:checked {}
+input:indeterminate {} /* un-selected radio buttons :) */
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-weight: normal;
+    padding:0;
+    margin:0;
+}
+
+h1, .alpha {
+    color:$c-copy;
+    font-family: $ff-sans;
+    font-size: 2.8em;
+    line-height: 1;
+    margin-bottom: 1em;
+
+    &.supporting {
+        font-size: 1.6em;
+        opacity: 0.75;
+    }
+
+}
+
+
+h2, .beta {
+    color:$c-copy;
+    font-family: $ff-sans;
+    font-size: 1.6em;
+    line-height: 1.1825;
+    opacity : 0.6;
+}
+
+h3, .gamma {
+    font-size: 2em;
+    color: $c-copy;
+    line-height: 1.2;
+}
+
+h4, .delta {
+    color:$c-copy;
+    font-size:1.5em;
+}
+
+h5, .epsilon {
+    font-size: 1.6em;
+    color: $c-copy;
+    line-height:1.375;
+    padding: 0;
+    margin: 0 0 16px 0;
+}
+
+p, .paragraph {
+    font-size: 1.3em;
+    line-height:1.375;
+    padding: 0;
+    margin: 0 0 16px 0;
+}
+
+p code {
+    border-radius: 4px;
+    padding: 0.1em 0.4em;
+    background-color: rgba($c-primary, 0.8);
+}
+
+pre {
+    position: relative;
+    border: 1px solid $c-copy;
+    padding: 2em;
+    margin: 2em auto;
+    font-family: $ff-mono;
+    background-color: $c-copy;
+    color: $c-primary;
+    border-radius: 4px;
+
+    &:after {
+        content: attr(data-type);
+        position: absolute;
+        top: -4px;
+        right: 10px;
+        background: $c-secondary;
+        color: $c-bg;
+        padding: 2em 0.2em 1em;
+        font-weight: bold;
+        text-transform: uppercase;
+        text-align: center;
+        text-shadow: 1px 1px 0 rgba($c-copy, 0.6);
+        min-width: 40px;
+    }
+}
+
+blockquote {
+    border-left: 0.4em solid rgba($c-copy, 0.8);
+    padding-left: 2em;
+    margin: 2em 1.8em;
+    font-size: 1.2em;
+    font-family: $ff-serif;
+
+    cite {
+        display: block;
+        text-align: left;
+
+        &:before {
+            content: "-- ";
+        }
+    }
+}
+
+
+

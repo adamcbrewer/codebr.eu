@@ -1,7 +1,7 @@
 /*
 Title: Style Guide
 Description: Codebreu Style Guide
-Date: 2013-07-05
+Date:
 Author: Stu Grant
 */
 

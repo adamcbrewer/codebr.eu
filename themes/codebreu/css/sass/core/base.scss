@@ -24,7 +24,7 @@ html {
 body {
     width: 100%;
     height: 100%;
-    font-family: $ff-sans;
+    font-family: $ff-base;
     background-color: $c-bg;
     color: $c-copy;
     font-size: 1.6em;
@@ -48,76 +48,4 @@ body {
 /* Style the webkit validation message for forms */
 ::-webkit-validation-bubble-message {
     padding: 40px;
-}
-
-a { color: $c-secondary; }
-a:link {}
-a:visited {}
-a:hover { color: $c-primary }
-a:active {}
-a:focus {}
-
-input:required {}
-input:optional {}
-input:valid {}
-input:invalid {}
-input:default {}
-input:focus {}
-
-input:enabled {}
-input:disabled {}
-input:checked {}
-input:indeterminate {} /* un-selected radio buttons :) */
-
-p {
-    // font-family: $ff-serif;
-}
-
-p code {
-    @include border-radius(4px);
-    padding: 0.1em 0.4em;
-    background-color: rgba($c-primary, 0.8);
-}
-
-pre {
-    position: relative;
-    border: 1px solid $c-copy;
-    padding: 2em;
-    margin: 2em auto;
-    font-family: $ff-mono;
-    background-color: $c-copy;
-    color: $c-primary;
-    @include border-radius(4px);
-
-    &:after {
-        content: attr(data-type);
-        position: absolute;
-        top: -4px;
-        right: 10px;
-        background: $c-secondary;
-        color: $c-bg;
-        padding: 2em 0.2em 1em;
-        font-weight: bold;
-        text-transform: uppercase;
-        text-align: center;
-        text-shadow: 1px 1px 0 rgba($c-copy, 0.6);
-        min-width: 40px;
-    }
-}
-
-blockquote {
-    border-left: 0.4em solid rgba($c-copy, 0.8);
-    padding-left: 2em;
-    margin: 2em 1.8em;
-    font-size: 1.2em;
-    font-family: $ff-serif;
-
-    cite {
-        display: block;
-        text-align: left;
-
-        &:before {
-            content: "-- ";
-        }
-    }
 }
