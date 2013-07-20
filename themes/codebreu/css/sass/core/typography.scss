@@ -88,6 +88,7 @@ pre {
     border: 1px solid $c-copy;
     padding: 2em;
     margin: 2em auto;
+    font-size: 0.8em;
     font-family: $ff-mono;
     background-color: $c-copy;
     color: $c-primary;
@@ -106,6 +107,14 @@ pre {
         text-align: center;
         text-shadow: 1px 1px 0 rgba($c-copy, 0.6);
         min-width: 40px;
+    }
+
+
+
+    @media #{$mq-small-main} {
+        pre {
+            font-size: em;
+        }
     }
 }
 

@@ -28,63 +28,89 @@
 
 	<div class="wrapper">
 		<header class="header" role="banner">
-	        <a id="logo" href="{{ base_url }}" title="{{ site_title }}">
+	        <a class="site-logo" href="{{ base_url }}" title="{{ site_title }}">
 	        	<img src="{{ theme_url }}/img/codebreu-logo.png" alt="{{ site_title }}" role="logo" />
 	        </a>
 	    </header>
 
-	    <section class="content">
 
-			{% if is_front_page %} <!-- Front page lists all blog posts -->
 
-				<div class="posts">
-					<ol class="posts-list">
-						{% for page in pages %}
-							{% if page.date %} <!-- Note we check for Date field (posts) here -->
-								<li class="post">
-									<h2 class="post-title"><a class="post-title-link" href="{{ page.url }}">{{ page.title }}</a></h2>
-									<footer class="post-meta">
-										<span class="post-author">{{ page.author }}</span> &mdash; <time class="post-date" datetime="{{ page.date }}" title="{{ page.date }}">{{ page.date_formatted }}</time>
-									</footer>
-								</li>
-							{% endif %}
-						{% endfor %}
-					</ol>
-				</div>
+	   {% if is_front_page %} <!-- Front page lists all blog posts -->
 
-			{% else %} <!-- Single page shows individual blog post -->
+		   <section class="home-content">
+			   	<div class="posts">
+			   		<ol class="posts-list">
+			   			{% for page in pages %}
+			   			{% if page.date %} <!-- Note we check for Date field (posts) here -->
+			   			<li class="post">
+			   				<img src="{{ page.img }}" />
+			   				<h2 class="post-title"><a class="post-title-link" href="{{ page.url }}">{{ page.title }}</a></h2>
+			   				<footer class="post-meta">
+			   					<span class="post-author">{{ page.author }}</span> &mdash; <time class="post-date" datetime="{{ page.date }}" title="{{ page.date }}">{{ page.date_formatted }}</time>
+			   				</footer>
+			   			</li>
+			   			{% endif %}
+			   			{% endfor %}
+			   		</ol>
+			   	</div>
+		   </section>
 
-				<nav class="prevnext">
-					{% if prev_page.date %}<a rel="prev" href="{{ prev_page.url }}">Back</a>{% endif %}
-					{% if next_page.date %}<a rel="next" href="{{ next_page.url }}">Next</a>{% endif %}
-				</nav>
+		{% else %} <!-- Single page shows individual blog post -->
+
+		<section class="main-content">
 
 				{{ content }}
 
-			{% endif %}
+				<script type="text/javascript">
+			        var disqus_shortname = 'codebreu',
+			        	disqus_identifier = "{{ page.title }}";
+			        (function() {
+			            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+			            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+			            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+			        })();
+			    </script>
+			    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+			    <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
 
 		</section>
+		<aside class="main-aside">
 
-		<div class="push"></div>
+				<h2>Posts</h2>
+
+				<nav class="prevnext">
+					{% if prev_page.date %}<a rel="prev" href="{{ prev_page.url }}">Previous Post</a>{% endif %}
+					{% if next_page.date %}<a rel="next" href="{{ next_page.url }}">Next Post</a>{% endif %}
+				</nav>
+
+				<ol class="posts-list">
+					{% for page in pages %}
+						{% if page.date %} <!-- Note we check for Date field (posts) here -->
+							<li class="post">
+								<h2 class="post-title"><a class="post-title-link" href="{{ page.url }}">{{ page.title }}</a></h2>
+								<footer class="post-meta">
+									<span class="post-author">{{ page.author }}</span> &mdash; <time class="post-date" datetime="{{ page.date }}" title="{{ page.date }}">{{ page.date_formatted }}</time>
+								</footer>
+							</li>
+						{% endif %}
+					{% endfor %}
+				</ol>
+		</aside>
+
+	{% endif %}
+
+
 	</div>
 
+	<div class="push"></div>
+
 	<footer class="footer" role="contentinfo">
-		<div class="wrapper">
+		<div class="footer-content">
 			&copy; <a target="_blank" title="brewerlogic.com" href="http://brewerlogic.com">Adam Brewer</a> &amp; <a target="_blank" title="stuuuuugoooooooooo" href="http://stugoo.co.uk">Stu Grant</a> {{ config.copywrite }}. <a title="@codebreu" target="_blank" href="http://twitter.com/codebreu">Twitter</a>
 		</div>
 	</footer>
-
-	<script type="text/javascript">
-        var disqus_shortname = 'codebreu',
-        	disqus_identifier = "{{ page.title }}";
-        (function() {
-            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-        })();
-    </script>
-    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-    <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
 
 </body>
 </html>

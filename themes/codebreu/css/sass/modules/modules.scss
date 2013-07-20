@@ -18,7 +18,17 @@
 		padding-left: 10px;
 		border-left: 5px solid $c-secondary;
 
+		.main-aside & {
+
+			border-width: 2px;
+
+			h2 {
+				font-size:1.2em;
+			}
+		}
 	}
+
+
 }
 
 .post {

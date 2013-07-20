@@ -1,0 +1,91 @@
+/* ====================================================
+    LAYOUT STYLES
+
+    Layout rules divide the page into sections.
+    Layouts hold one or more modules together.
+==================================================== */
+
+
+
+
+.wrapper {
+
+    margin: 0 auto (-$h-footer); /* the bottom margin is the negative value of the footer's height */
+    min-height: 100%;
+    padding: 3em 4%;
+
+    @include clearfix;
+
+    &:after {
+      content: "";
+      display: block;
+      height: $h-footer;
+    }
+
+}
+
+.site-logo {
+
+    display: block;
+    margin: auto;
+    max-width: 154px;
+}
+
+
+.footer,
+.push {
+
+    height: $h-footer; /* .push must be the same height as .footer */
+}
+
+.footer {
+
+    background-color: $c-dark;
+    color: #f4d2a7;
+
+    .footer-content {
+        padding: 3em 4%;
+    }
+
+    a {
+        color: #f4d2a7;
+        text-decoration: none;
+
+        &:hover {
+            // text-decoration: underline;
+            color: $c-primary;
+        }
+    }
+}
+
+.dsq-brlink {
+    display: none;
+}
+
+
+.home-content {
+
+    max-width: 700px;
+    margin: auto;
+
+}
+
+.main-content {
+
+    @media #{$mq-small-main} {
+
+        width: 60.875%;
+        float: left;
+    }
+
+}
+
+.main-aside {
+
+    @media #{$mq-small-main} {
+
+        width: 30.125%;
+        float: right;
+    }
+
+}

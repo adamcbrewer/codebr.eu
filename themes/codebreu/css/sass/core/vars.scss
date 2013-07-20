@@ -23,3 +23,10 @@ $ff-mono: Monaco, Menlo, Consolas, "Courier New", monospace;
 // ===================
 $w-wrapper-max: 40em;
 $h-footer: 10em;
+
+
+// major breakpoints
+// ===================
+$mq-small-main : "screen and (min-width: 40em)";
+$mq-mid-main : "screen and (min-width: 50em)"; // not being used currently
+

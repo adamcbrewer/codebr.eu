@@ -3,7 +3,9 @@ Title: A Tip On Managing Large Scale Module Development
 Description: This is a custom description
 Date: 2013-07-04
 Author: Stu Grant
+Image: http://www.wallsave.com/wallpapers/2560x2048/anime-kittens/496315/anime-kittens-cats-praying-496315.jpg
 */
+
 
 # A Tip On Managing Large Scale Module Development #
 
