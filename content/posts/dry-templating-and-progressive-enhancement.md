@@ -30,4 +30,4 @@ I'm still searching for a solution, but I guess as a developer I'll never really
 
 ## Have something to add?
 
-<div id="disqus_thread"></div>
+<div class="disqus" id="disqus_thread"></div>
