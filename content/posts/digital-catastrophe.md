@@ -1,7 +1,7 @@
-/*
+/* WIP
 Title: What To Do In The Event of A Digital Catastrophe
 Description:
-Date: 2013-08-04
+Date:
 Author: Adam Brewer
 */
 
