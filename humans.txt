@@ -17,7 +17,6 @@ PEOPLE
 Adam Brewer - developer
 	@adamcbrewer
 	brewerlogic.com
-	adamcbrewer.com
 
 Stuart Grant - developer/designer
 	@stugoo
