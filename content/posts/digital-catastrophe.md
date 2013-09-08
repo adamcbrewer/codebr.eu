@@ -6,6 +6,7 @@ Author: Adam Brewer
 */
 
 # What To Do In The Event of A Digital Catastrophe
+<aside class="post-meta">Adam Brewer &mdash; <time datetime="">xx, 2013</time></aside>
 
 For me, I consider Gmail to be my most crucial account. All of my other online accounts (if I'm being honest) are superfluous waffle. Facebook, Twitter, Pinterest, etc. are all things I'm not bothered about losing completely, let alone losing access to.
 

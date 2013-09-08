@@ -6,6 +6,7 @@ Author: Adam Brewer
 */
 
 # DRY Templating and Progressive Enhancement
+<aside class="post-meta">Adam Brewer &mdash; <time datetime="2013-07-07">7th July, 2013</time></aside>
 
 I rember the day I read <a href="http://diveintohtml5.info/semantics.html" target="_blank" title="Dive Into HTML5: Semantics">Dive Into HTML5: Semantics</a>, recommended to me by <a href="http://stugoo.co.uk" target="_blank" title="Stugoo">a friend</a>. Before that day I though semantics was a way for developers to justify that we had a "code of ethics" when really the web was just a mashup.
 

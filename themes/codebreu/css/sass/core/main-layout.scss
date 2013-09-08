@@ -76,6 +76,12 @@
 
 .main-content {
 
+    .post-meta {
+        font-size: 1em;
+        margin: -2em 0 3em;
+        display: block;
+    }
+
     @media #{$mq-small-main} {
 
         width: 60.875%;

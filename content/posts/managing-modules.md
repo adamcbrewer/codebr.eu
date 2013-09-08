@@ -8,6 +8,7 @@ Image: http://www.wallsave.com/wallpapers/2560x2048/anime-kittens/496315/anime-k
 
 
 # A Tip On Managing Large Scale Module Development #
+<aside class="post-meta">Stu Grant &mdash; <time datetime="2013-07-04">4th July, 2013</time></aside>
 
  Often I am dropped into a large project and given a large document with module names and numbers with varients. When a site is going through testing, it can be sometimes difficult to decipher what modules are what so by using data-attributes I can quickly work out what modules are having problems.
 

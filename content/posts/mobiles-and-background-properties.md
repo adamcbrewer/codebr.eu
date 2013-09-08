@@ -7,6 +7,8 @@ Author: Adam Brewer
 
 
 # Mobiles and Background Properties: The Caveat
+<aside class="post-meta">Adam Brewer &mdash; <time datetime="2013-09-07">7th September, 2013</time></aside>
+
 
 As a front-end developer I agree that there are too many things out there that make life harder than it should be.
 
